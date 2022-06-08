@@ -1,0 +1,137 @@
+$color-colorPlate-1: #9C53A6;
+$color-colorPlate-2: #76BF2C;
+$color-colorPlate-3: #F2B705;
+$color-colorPlate-4: #F2F2F2;
+$color-colorPlate-5: #0D0D0D;
+$font-family-body: 'Roboto',
+sans-serif;
+$font-family-head: 'Macondo',
+cursive;
+
+@import "_home";
+@import "_about";
+@import"_media";
+@import"_faq";
+@import"_contact";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    box-shadow: inset 0 0 20px $color-colorPlate-2;
+    border: $color-colorPlate-2 solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 0;
+    // justify-content: space-between;
+    background-color: $color-colorPlate-4;
+    font-family: $font-family-head;
+    background-color: $color-colorPlate-4;
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 100%, rgba(118, 191, 44, 1) 33%);
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-toggler-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color-colorPlate-1;
+}
+
+.header1 {
+    grid-column: 1/4;
+    font-size: 3rem;
+    font-weight: 900;
+    background-color: $color-colorPlate-4 !important;
+
+}
+
+.header2 {
+    grid-column: 4/-1;
+    grid-column-end: 4;
+    font-weight: 900;
+    padding-right: 0;
+}
+
+.nav-link {
+    margin-left: 1.4rem;
+    transform: scale(1);
+    color: $color-colorPlate-1 !important;
+    text-shadow: 2px 2px 5px $color-colorPlate-5;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    transition: 1s ease;
+    color: $color-colorPlate-5 !important;
+    font-weight: 900 !important;
+}
+
+#logo {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    height: 10rem;
+    background: linear-gradient(270deg, rgba(242, 242, 242, 1) 100%, rgba(118, 191, 44, 1) 33%);
+}
+
+main {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: linear-gradient(45deg, rgba(156, 83, 166, 1)0%, rgba(242, 242, 242, 1) 50%, rgba(242, 183, 5, 1)100%);
+    min-height: 80.5vh;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 0 0 8px $color-colorPlate-2,
+        0 0 11px $color-colorPlate-3;
+}
+
+h1,
+h2,
+h5 {
+    font-family: $font-family-head;
+}
+
+p {
+    font-family: $font-family-body;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: $font-family-head;
+    background-color: $color-colorPlate-4;
+    margin-top: auto;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    color: $color-colorPlate-5;
+    font-weight: 600;
+    text-decoration: none;
+}

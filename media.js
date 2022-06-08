@@ -1,0 +1,1 @@
+const pic = document.getElementByIde

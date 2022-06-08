@@ -1,0 +1,46 @@
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery1 {
+    margin: 10px auto;
+    display: block;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px 0 5px 0;
+    transform: scale(1);
+    box-shadow: 5px 5px 8px 7px #76BF2C;
+}
+
+.gallery {
+    display: none;
+}
+
+.gallery1:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.gallery1:hover+.gallery {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 40%;
+    left: 25%;
+    width: 40%;
+    z-index: 1000;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.video {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

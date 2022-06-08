@@ -1,0 +1,61 @@
+.rowmargin {
+    margin: 20px 20px 0 20px;
+}
+
+.col-margin {
+    margin-bottom: 20px;
+
+}
+
+.card-height {
+    height: 70vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+}
+
+.border {
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 7px 4px #6b6b6be6;
+}
+
+.img-border {
+    height: fit-content;
+    border-radius: 25px;
+}
+
+.transition {
+    transform: scale(1);
+    background: rgb(118, 191, 44);
+    background: radial-gradient(circle, rgba(118, 191, 44, 0.1) 0%, rgba(156, 83, 166, .1) 50%, rgba(242, 183, 5, .1) 100%);
+}
+
+.transition:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.btn:hover {
+    background: rgb(156, 83, 166);
+    background: linear-gradient(126deg, rgba(156, 83, 166, 1) 0%, rgba(242, 242, 242, 1) 50%, rgba(242, 183, 5, 1) 100%);
+    font-weight: 600;
+}
+
+p {
+    font-family: $font-family-body;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-size: 200%;
+    font-family: $font-family-head;
+    font-weight: bolder;
+    color: $color-colorPlate-2;
+    text-shadow: 2px 2px $color-colorPlate-5;
+}
+
+section {
+    margin: 20px;
+}
