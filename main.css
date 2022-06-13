@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Roboto:wght@300&family=Satisfy&display=swap");
+.w-100 {
+  height: 90vh;
+}
+
 .rowmargin {
   margin: 20px 20px 0 20px;
 }
@@ -44,8 +48,8 @@
 }
 
 .transition:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -104,11 +108,15 @@ h2 {
   font-weight: 500;
 }
 
-.pictures {
+.photo-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (0.5fr)[2];
+      grid-template-columns: repeat(2, 0.5fr);
+  -ms-grid-rows: (0.5fr)[5];
+      grid-template-rows: repeat(5, 0.5fr);
+  -webkit-column-gap: 50%;
+          column-gap: 50%;
 }
 
 .gallery1 {
@@ -121,6 +129,7 @@ h2 {
           transform: scale(1);
   -webkit-box-shadow: 5px 5px 8px 7px #76BF2C;
           box-shadow: 5px 5px 8px 7px #76BF2C;
+  opacity: 0.6;
 }
 
 .gallery {
@@ -130,6 +139,7 @@ h2 {
 .gallery1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  opacity: 1;
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
@@ -138,9 +148,10 @@ h2 {
   display: block;
   position: absolute;
   float: right;
-  top: 40%;
+  top: 38%;
   left: 25%;
-  width: 40%;
+  width: 50%;
+  height: 35rem;
   z-index: 1000;
 }
 
@@ -245,7 +256,7 @@ textarea:focus {
 }
 
 .formControl.success input {
-  border-color: #76BF2C;
+  border: solid 5px #76BF2C;
 }
 
 .formControl.error input {
@@ -273,6 +284,120 @@ input[type=submit] {
   margin-top: 1rem;
   padding: 0.5rem;
   width: 100%;
+}
+
+@media (min-width: 1550px) {
+  .gallery1:hover + .gallery {
+    display: block;
+    position: absolute;
+    float: right;
+    left: 25%;
+    width: 50%;
+    height: 35rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 1250px) {
+  .video {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-column-gap: 10rem;
+            column-gap: 10rem;
+    row-gap: 3rem;
+  }
+  .gallery1:hover + .gallery {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 45%;
+    left: 25%;
+    width: 50%;
+    height: 25rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-sm-3 {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 50%;
+  }
+  .w-100 {
+    height: 60vh;
+  }
+  .photo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: row;
+        flex-flow: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gallery1:hover + .gallery {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 55%;
+    left: 22.5%;
+    width: 55%;
+    height: 20rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 600px) {
+  .w-100 {
+    height: 40vh;
+  }
+  .photo-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+    -ms-grid-rows: (0.5fr)[4];
+        grid-template-rows: repeat(4, 0.5fr);
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .gallery1:hover + .gallery {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 80%;
+    left: 2.5%;
+    width: 95%;
+    height: 15rem;
+    z-index: 1000;
+  }
+  .gallery1:hover + .gallery2 {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 50%;
+    left: 2.5%;
+    width: 95%;
+    height: 15rem;
+    z-index: 1000;
+  }
+  .col-sm-3 {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 100%;
+  }
 }
 
 * {

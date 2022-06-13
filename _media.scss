@@ -1,6 +1,8 @@
-.pictures {
+.photo-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    column-gap: 50%;
 }
 
 .gallery1 {
@@ -11,6 +13,7 @@
     border-radius: 10px 0 5px 0;
     transform: scale(1);
     box-shadow: 5px 5px 8px 7px #76BF2C;
+    opacity: 0.6;
 }
 
 .gallery {
@@ -19,6 +22,7 @@
 
 .gallery1:hover {
     transform: scale(1.1);
+    opacity: 1;
     transition: 1s ease;
 }
 
@@ -26,9 +30,10 @@
     display: block;
     position: absolute;
     float: right;
-    top: 40%;
-    left: 25%;
-    width: 40%;
+    top: 38%;
+        left:25%;
+        width:50%;
+        height: 35rem;
     z-index: 1000;
 }
 

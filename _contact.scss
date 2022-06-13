@@ -2,12 +2,6 @@ h2 {
     margin-bottom: 2rem;
 }
 
-// :root {
-//     $color-colorPlate-1
-//     // --success: #2c7;
-//     // --error: #e43;
-// }
-
 .container {
     background-color: rgba($color-colorPlate-2, 0.5);
     border-radius: 15px;
@@ -39,7 +33,9 @@ textarea:focus {
 }
 
 .formControl.success input {
-    border-color: $color-colorPlate-2;
+    // border-color: 
+    border: solid 5px $color-colorPlate-2;
+    ;
 }
 
 .formControl.error input {
@@ -52,8 +48,6 @@ textarea:focus {
 }
 
 .formControl.error small {
-    // text-shadow: 0 0 2px $color-colorPlate-5,
-    // 0 0 3px $color-colorPlate-5;
     visibility: visible;
 }
 

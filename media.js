@@ -1,1 +1,4 @@
-const pic = document.getElementByIde
+
+
+
+
