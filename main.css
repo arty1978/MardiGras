@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Macondo&family=Roboto:wght@300&family=Satisfy&display=swap");
+.carousel-caption {
+  color: #F2F2F2;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 2px 2px #0D0D0D;
+}
+
 .w-100 {
   height: 90vh;
 }
