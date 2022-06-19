@@ -321,7 +321,7 @@ input[type=submit] {
     height: 60vh;
   }
   .full-img {
-    height: 65%;
+    height: 65vh;
     padding: 20px;
   }
 }
@@ -331,17 +331,14 @@ input[type=submit] {
     height: 40vh;
   }
   .full-img {
-    height: 60%;
-    padding: 20px;
+    height: 33vh;
+    padding: 10px;
   }
   .col-sm-3 {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
     width: 100%;
   }
-}
-
-@media (min-width: 450px) {
   iframe {
     display: none;
   }
