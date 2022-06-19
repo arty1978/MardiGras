@@ -56,13 +56,12 @@
 }
 
 p {
-    font-family: $font-family-body;
+    font-family: $font-family-head !important;
     text-align: justify;
 }
 
 p::first-letter {
     font-size: 200%;
-    font-family: $font-family-head;
     font-weight: bolder;
     color: $color-colorPlate-2;
     text-shadow: 2px 2px $color-colorPlate-5;
